@@ -112,7 +112,7 @@ Now you can run composer commands by typing ```composer {command}```
 ### Helper aliases
 ---
 | Command (alias) | Expands to
---- | --- | :---
+| ------------- | -------------
 | covers | `./vendor/bin/covers-validator`
 | phpcs | `./vendor/bin/phpcs -p -s` _(assumes you have a phpcs.xml config file)_
 | phpstan | `./vendor/bin/phpstan`
