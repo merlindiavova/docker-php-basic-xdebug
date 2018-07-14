@@ -78,7 +78,7 @@ docker run --rm \
 
 ## Making it all easier
 ---
-I recommend creating aliases for PHP, composer.
+I recommend creating aliases for PHP and Composer.
 
 ```bash
 # Please note the single quotes (' '). 
