@@ -84,12 +84,7 @@ I recommend creating aliases for PHP and Composer.
 # Please note the single quotes (' '). 
 # If you use double quotes (" ") $(pwd) will not expand.
 
-alias php='docker run --rm \
-    -v $(pwd):/app \
-    -w /app \
-    --user $(id -u):$(id -g) \
-    merlindiavova/docker-php-basic-xdebug:latest \
-    php'
+alias php='docker run --rm -v $(pwd):/app -w /app --user $(id -u):$(id -g) merlindiavova/docker-php-basic-xdebug:latest php'
 ```
 
 Now you can run PHP commands by typing ```php {command}```
@@ -98,13 +93,7 @@ Now you can run PHP commands by typing ```php {command}```
 # Please note the single quotes (' '). 
 # If you use double quotes (" ") $(pwd) will not expand.
 
-alias composer='docker run --rm \
-    -v $(pwd):/app \
-    -w /app \
-    --user $(id -u):$(id -g) \
-    -v ~/.composer:/.composer \
-    merlindiavova/docker-php-basic-xdebug:latest \
-    composer --ansi'
+alias composer='docker run --rm -v $(pwd):/app -w /app --user $(id -u):$(id -g) -v ~/.composer:/.composer merlindiavova/docker-php-basic-xdebug:latest composer --ansi'
 ```
 
 Now you can run composer commands by typing ```composer {command}```
