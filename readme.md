@@ -14,7 +14,7 @@ docker run --rm \
     -v $(pwd):/app \
     -w /app \
     --user $(id -u):$(id -g) \
-    merlindiavova/php-basic-xdebug:latest \
+    merlindiavova/docker-php-basic-xdebug:latest \
     {command here}
 ```
 
@@ -28,7 +28,7 @@ docker run --rm \
     -w /app \
     --user $(id -u):$(id -g) \
     -v ~/.composer:/.composer \
-    merlindiavova/php-basic-xdebug:latest \
+    merlindiavova/docker-php-basic-xdebug:latest \
     composer --ansi require phpunit/phpunit ^7
 ```
 
@@ -39,7 +39,7 @@ docker run --rm \
     -v $(pwd):/app \
     -w /app \
     --user $(id -u):$(id -g) \
-    merlindiavova/php-basic-xdebug:latest \
+    merlindiavova/docker-php-basic-xdebug:latest \
     phpunit --filter SomeClassNameOrFilter
 ```
 
@@ -50,7 +50,7 @@ docker run --rm \
     -v $(pwd):/app \
     -w /app \
     --user $(id -u):$(id -g) \
-    merlindiavova/php-basic-xdebug:latest \
+    merlindiavova/docker-php-basic-xdebug:latest \
     phpcs --report=summary
 ```
 
@@ -61,7 +61,7 @@ docker run --rm \
     -v $(pwd):/app \
     -w /app \
     --user $(id -u):$(id -g) \
-    merlindiavova/php-basic-xdebug:latest \
+    merlindiavova/docker-php-basic-xdebug:latest \
     covers
 ```
 
@@ -72,7 +72,7 @@ docker run --rm \
     -v $(pwd):/app \
     -w /app \
     --user $(id -u):$(id -g) \
-    merlindiavova/php-basic-xdebug:latest \
+    merlindiavova/docker-php-basic-xdebug:latest \
     phpstan
 ```
 
@@ -88,7 +88,7 @@ alias php='docker run --rm \
     -v $(pwd):/app \
     -w /app \
     --user $(id -u):$(id -g) \
-    merlindiavova/php-basic-xdebug:latest \
+    merlindiavova/docker-php-basic-xdebug:latest \
     php'
 ```
 
@@ -103,7 +103,7 @@ alias composer='docker run --rm \
     -w /app \
     --user $(id -u):$(id -g) \
     -v ~/.composer:/.composer \
-    merlindiavova/php-basic-xdebug:latest \
+    merlindiavova/docker-php-basic-xdebug:latest \
     composer --ansi'
 ```
 
@@ -129,6 +129,6 @@ docker run --rm \
     -v $(pwd):/app \
     -w /app \
     --user $(id -u):$(id -g) \
-    merlindiavova/php-basic-xdebug:latest \
+    merlindiavova/docker-php-basic-xdebug:latest \
     {alias here}
 ```
